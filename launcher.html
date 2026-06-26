@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UGM NORTE</title>
+
+<link rel="stylesheet" href="css/launcher.css">
+
+</head>
+
+<body>
+    <div id="splash">
+
+    <div class="splash-content">
+
+        <img
+            src="assets/logo.png"
+            alt="UGM">
+
+        <h1>
+            UNIVERSIDAD DEL GOLFO
+            DE MÉXICO NORTE
+        </h1>
+
+        <p>
+            Biblioteca Digital
+        </p>
+
+        
+
+    </div>
+
+</div>
+<div id="app">
+<header>
+
+    <img src="assets/logo.png" alt="Logo" class="logo">
+
+    <h1>UNIVERSIDAD DEL GOLFO DE MÉXICO NORTE</h1>
+
+    <p>Revista Digital</p>
+
+</header>
+<section class="busqueda">
+
+    <input
+        type="text"
+        id="buscarRevista"
+        placeholder="Buscar revista...">
+
+</section>
+
+
+
+
+<section class="filtros">
+
+    <button class="filtro activo"
+            data-categoria="Todas">
+        Todas
+    </button>
+
+    <button class="filtro"
+            data-categoria="Institucional">
+        Institucional
+    </button>
+
+    <button class="filtro"
+            data-categoria="Eventos">
+        Eventos
+    </button>
+
+    <button class="filtro"
+            data-categoria="Cultura">
+        Cultura
+    </button>
+
+</section>
+<section class="destacada">
+
+    <h2>Revista Destacada</h2>
+
+    <div class="destacada-card">
+
+        <img src="assets/revista1.png">
+
+        <div>
+
+            <h3>Revista Corporativa</h3>
+
+            <p>
+                Edición especial aniversario.
+            </p>
+
+            <button onclick="location.href='index.html'">
+                Abrir Revista
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<main  id="catalogo" class="catalogo">
+</main>
+
+<script>
+
+function abrirRevista(ruta){
+
+    window.location.href = ruta;
+
+}
+
+</script>
+<script src="js/revistas.js"></script>
+<script src="js/launcher.js"></script>
+</div>
+
+</body>
+</html>

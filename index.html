@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Revista Digital</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+<body>
+    <header class="encabezado">
+
+    <img src="assets/logo.png">
+
+    <div>
+
+        <h1>
+            Universidad del Golfo de México Norte
+        </h1>
+
+        <p>
+            Biblioteca Digital
+        </p>
+        
+    </div>
+    <img src="assets/logoINV.png">
+
+</header>
+<div class="controles">
+    <button onclick="location.href='launcher.html'">MENU</button>
+    <button id="btnPrev">⟨ Anterior</button>
+
+    <span id="paginaActual">
+        Página 1 de 10
+    </span>
+
+    <button id="btnNext">Siguiente ⟩</button>
+
+    <button id="zoomIn">🔍+</button>
+    <button id="zoomOut">🔍−</button>
+    <button id="fullscreen">⛶</button>
+
+</div>
+
+<div id="flipbook">
+    <div class="page blank"></div>
+    <div class="page portada"><img src="paginas/p1.png"></div>
+    <div class="page portada"><img src="paginas/p2.png"></div>
+    <div class="page portada"><img src="paginas/p3.png"></div>
+    <div class="page portada"><img src="paginas/p4.png"></div>
+    <div class="page portada"><img src="paginas/p5.png"></div>
+    <div class="page portada"><img src="paginas/p6.png"></div>
+    <div class="page portada"><img src="paginas/p7.png"></div>
+    <div class="page portada"><img src="paginas/p8.png"></div>
+    <div class="page portada"><img src="paginas/p9.png"></div>
+    <div class="page portada"><img src="paginas/p10.png"></div>
+    <div class="page portada"><img src="paginas/p11.png"></div>
+    <div class="page portada"><img src="paginas/p12.png"></div>
+    <div class="page blank"></div>
+
+</div>
+<script src="libs/pageflip/page-flip.browser.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
