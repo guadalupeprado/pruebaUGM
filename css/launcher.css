@@ -1,0 +1,378 @@
+:root{
+    --color-1:#FFF;
+    --color-2:#3973A3;
+    --color-3:#7FB009;
+    --color-4:#5197C8;
+    --color-5:#E0EBC1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:
+    "Segoe UI",
+    sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--color-5),
+        var(--color-1)
+    );
+}
+
+header{
+
+    background: linear-gradient( 1000deg, var(--color-3), var(--color-4 ));
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    box-shadow:
+    0 4px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header h1{
+
+    font-size:2.8rem;
+
+    margin-bottom:10px;
+}
+
+header p{
+
+    opacity:.95;
+}
+
+.catalogo{
+    
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:40px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+}
+
+.revista-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.12);
+}
+
+.revista-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.20);
+}
+
+.revista-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:20px;
+}
+
+.revista-card img{
+
+    width:65%;
+
+    height:auto;
+
+    object-fit:contain;
+}
+
+.revista-card h2{
+
+    color:var(--color-2);
+
+    padding:15px 15px 5px;
+}
+
+.revista-card span{
+
+    display:block;
+
+    padding:0 15px 20px;
+
+    color:#555;
+}
+
+.busqueda{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:30px;
+}
+
+.busqueda input{
+
+    width:100%;
+
+    padding:15px 20px;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:1rem;
+
+    outline:none;
+
+    box-shadow:
+    0 4px 12px rgba(0,0,0,.1);
+}
+
+.revista-card small{
+
+    display:block;
+
+    padding:
+    0 15px 20px;
+
+    color:
+    var(--color-3);
+
+    font-weight:bold;
+}
+.filtros{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:30px;
+}
+
+.filtro{
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:var(--color-2);
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.filtro:hover{
+
+    background:var(--color-4);
+
+    color:white;
+}
+
+.filtro.activo{
+
+    background:var(--color-3);
+
+    color:white;
+}
+
+.destacada{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:20px 40px 50px;
+}
+
+.destacada h2{
+
+    color:var(--color-2);
+
+    margin-bottom:20px;
+}
+
+.destacada-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:
+    350px 1fr;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.12);
+}
+
+.destacada-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+.destacada-card div{
+
+    padding:30px;
+}
+
+.destacada-card h3{
+
+    color:var(--color-2);
+
+    margin-bottom:15px;
+}
+
+.destacada-card button{
+
+    margin-top:20px;
+
+    border:none;
+
+    background:var(--color-3);
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+#splash{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        var(--color-3),
+        var(--color-4)
+    );
+
+    transition:
+    opacity 1s ease;
+}
+
+.splash-content{
+
+    text-align:center;
+
+    color:white;
+
+    animation:
+    aparecer 1s ease;
+}
+
+.splash-content img{
+
+    width:180px;
+border-radius: 50%;
+    margin-bottom:25px;
+}
+
+.splash-content h1{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+}
+
+.splash-content h2{
+
+    font-size:1.2rem;
+
+    font-weight:400;
+
+    opacity:.9;
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(20px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+    }
+}
